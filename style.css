@@ -12,7 +12,9 @@ nav{
     background-color: #d32f2f;
     color: white
 }
-
+.mobile{
+    display: none;
+}
 nav li{
     list-style: none;
     display: inline;
@@ -292,6 +294,55 @@ form button:hover{
 
 }
 
+footer{
+    background-color: #b71c1c;
+    padding: 10px;
+    color: white;
+}
+.footwrap span{
+    margin-left: 5px;
+}
+.footwrap{
+    display: grid;
+    gap: 10px;
+    grid-template: 1fr/ 1fr 1fr 1fr 1fr;
+}
+.opening{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding: 0px 30px;
+    
+}
+.quick-link{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-right: 2px solid white;
+    /* padding: 0px 30px; */
+}
+.quick-link a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition:all 8ms ease;
+}
+.quick-link a:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+.follow-us ul{
+    padding: 10px;
+}
+.follow-us li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+
+
 /* responsiveness for mobile screen */
 @media (max-width: 408px) {
    
@@ -300,9 +351,12 @@ form button:hover{
     }
     nav i{
         visibility: visible;
-        font-size: 1.2rem;
+        font-size: 1.2rem
     }
-
+    
+    .mobile{
+        display: block;
+    }
     #menu{
         /* height: 25rem; */
         /* border: 2px solid salmon; */
@@ -379,6 +433,34 @@ form button:hover{
     
     form button{
         width: 5rem;
+
+    }
+    .footwrap{
+        /* display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-evenly; */
+        display: grid;
+        gap: 30px;
+        grid-template: 1fr /1fr;
+    }
+    .opening{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-right: none;
+        border-left: none;
+        padding: 30px 0px;
+    }
+    .quick-link{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border-right: none;
+        border-bottom: 2px solid white;
+        padding: 30px 0px;
 
     }
 }
