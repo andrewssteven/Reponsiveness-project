@@ -344,7 +344,7 @@ footer{
 
 
 /* responsiveness for mobile screen */
-@media (min-width: 576px) and (max-width: 768px){
+@media (max-width: 768px){
    
     nav ul{
         display: none;
