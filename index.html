@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to fontawesome fonts -->
+    <script src="https://kit.fontawesome.com/35814c8a1d.js" crossorigin="anonymous"></script>
+    <!-- tailwind css library link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/4.0.0-alpha.16/lib.min.js" integrity="sha512-l/v3dxBNZZ37zmLN/lQ7w66OiQxTO56mHNFocKreTwkEOiinkHGMofoag0UJYEcGVFXnDEllw/o5Byr0bayQVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- This is the header/nav bar section -->
+            <nav>
+                <p style="cursor: pointer;">Ember & Oak</p>
+                <div class="mobham">
+                  Menu<i class="fa-solid fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="#home">Home </a></li>
+                    <li><a href="#menu">Menu </a></li>
+                    <li><a href="#about">About Us </a></li>
+                    <li><a href="#contact">Contact </a></li>
+                </ul>
+            </nav>
+
+        <!-- This is the hero section where we sell the page -->
+        <section id="hero">
+
+                <h4>Welcome to Ember & Oak</h4>
+                <p>
+                     where fire meets flavor. 
+                    Indulge in perfectly grilled steaks, slow-smoked meats,
+                     and an unforgettable dining experience. 
+                     Whether you're here for a casual night out or a special occasion,
+                      every bite is crafted to perfection.
+                </p>
+
+                <p>
+                    Savor the Flavor, Prime Cuts and Unmatched Ambiance.
+                </p>
+
+                <button> Reserve a Table</button>
+        
+        </section>
+
+        <!-- This is the Menu section where we display our menu -->
+        <section id="menu">
+            <h3 style="text-align: center; color:goldenrod">Our Signature Dishes</h3>
+            <i class="fa-solid fa-backward" id="backward"></i>
+            <div class="menu">
+                <div class="mitems tomahawk">
+                    <div class="top">
+
+                    </div>
+                    <div class="bottom">
+                        <h5>Smoked Tomahawk</h5>
+                        <p>Price: $65</p>
+                        <p> Slow-smoked over oakwood, this massive steak delivers rich flavor, 
+                            served with truffle mashed potatoes.</p>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="mitems ribeye">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <h5>Ember-Grilled Ribeye</h5>
+                        <p>Price: $36</p>
+                        <p>14 oz ribeye, perfectly seasoned and grilled over
+                             an open flame, served with garlic butter and rosemary.</p>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="mitems filet">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <h5>Glazed Filet Mignon</h5>
+                        <p>Price: $48</p>
+                        <p>8 oz filet mignon, glazed with a house-made
+                             bourbon reduction, paired with grilled asparagus and creamy mashed potatoes.</p>
+                        <button>Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-forward" id="forward"></i>
+        </section>
+
+        <!-- This is the about section where we tell you more about our resturant -->
+        <section id="about">
+            <div class="about">
+                <div class="abt left">
+                    <img src="images/resturant.jpg" alt="Picture of the resturant">
+                </div>
+                <div class=" abt right">
+                    <h3>About Ember & Oak</h3>
+                    <br>
+                    <p>
+                        At Ember & Oak, we believe that great steak starts with fire, passion, and the finest cuts of meat. Our chefs master the art of grilling over open flames and oakwood,
+                         creating rich, smoky flavors in every bite. From premium ribeyes to slow-smoked tomahawks, every dish is crafted to perfection and served in a warm, inviting atmosphere.
+                    </p>
+                    <br>
+                    <p>
+                        Whether you’re celebrating a special occasion or simply indulging in a night of fine dining, Ember & Oak
+                         promises an unforgettable experience where fire meets flavor.
+                    </p>
+                    <br>
+                    <h4>Expertly Grilled Steaks, Premium Ingredients and Unmatched Ambiance</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- This is the contact section where you can always relate your feddback to us  -->
+        <section id="contact">
+            <div class="contact">
+                <h2>Get in Touch</h2>
+                <h4>Have a question or want to reserve a table? we'd love to hear from you!</h4>
+                <br>
+
+                <div class="wrapper">
+                    <div class="form">
+                    <form>
+                        <div>
+                            <label for="first-name">First Name: </label>
+                        <input type="text" placeholder="Enter Name">
+                        </div>
+                        <br>
+                        <div>
+                        <label for="last-name">Last Name: </label>
+                        <input type="text" placeholder="Enter last name">
+                        </div>
+                        <br>
+                        <div>
+                        <label for="email">Email: </label>
+                        <input type="email" placeholder="Example@gmail.com">
+                        </div>
+                        <br>
+                        <div>
+                        <textarea placeholder="Enter your message here"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                    </div>
+                
+                    <div class="cnt-info">
+                    <li><i class="fa-solid fa-globe"></i> Find Us</li>
+                    <p>123 Oakwood Avenue, Downtown City</p>
+                    <li><i class="fa-solid fa-phone"></i> Call Us</li>
+                    <p>(555) 123-4567</p>
+                    <li><i class="fa-solid fa-envelope"></i>Email</li>
+                    <p>contact@emberandoak.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="color: white;">
+        <p>&copy; Copyright Stephen (Tickle me Pink Tigers)</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #1b1b1b;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 5px; */
+    background-color: #d32f2f;
+    color: white
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    transition: all 10ms ease;
+    
+}
+nav ul, nav p, nav i{
+    padding: 10px;
+}
+
+nav i{
+    visibility: hidden;
+    cursor: pointer
+}
+
+nav li:hover{
+    /* background-color: aqua; */
+    background-color: #b71c1c;
+    color: goldenrod;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+#hero{
+    background-image: url(images/img5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    font-size: 1.1rem;
+    /* color: #eacaa1; */
+    /* font-weight: bold; */
+    height: 16rem;
+}
+#hero button{
+    background-color: #d32f2f;
+    border: 2px solid white;
+    padding: 5px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#hero button:hover{
+    background-color: #b71c1c;
+}
+
+#menu{
+    height: 25rem;
+    /* border: 2px solid salmon; */
+    padding: 5px 20px;
+    background-color: #1b1b1b;
+    position: relative;
+}
+.menu{
+    display: grid;
+    grid-template: 100%/ 1fr 1fr 1fr;
+    gap: .5rem;
+    height: 90%;
+    color: white;
+    padding: 10px;
+}
+
+/* section menu icon styling */
+#menu i{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    position: absolute;
+    border-radius: 50%;
+    /* opacity: 1; */
+    z-index: 1;
+    cursor: pointer;
+    transition: all 5ms linear;
+}
+#menu i:hover{
+    transform: scale(1.2);
+}
+#backward, #forward{
+    top: 50%;
+}
+#backward{
+    left: 14px;
+}
+#forward{
+    right: 14px
+}
+
+
+.mitems{
+    box-shadow: 0px 0px 3px rgb(224, 217, 217);
+    height: 100%;
+    border-radius: 10px;
+    display: grid;
+    gap: 1px;
+    position: relative;
+    grid-template: 60% 40%/ 1fr;
+}
+
+.mitems button{
+    background-color: #d32f2f;
+    border: 2px solid white;
+    padding: 3px;
+    width: 7rem;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    position: absolute;
+    bottom:.5rem;
+}
+
+.mitems button:hover{
+    background-color: #b71c1c;
+}
+
+.tomahawk .top{
+    background-image: url(images/Tomahawk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menu .bottom{
+    padding: 5px;
+}
+
+.menu h5{
+    color: goldenrod;
+}
+
+.ribeye .top{
+    background-image: url(images/Ribeye.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.filet .top{
+    background-image: url(images/Filet\ Mignon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#about{
+    height: 20rem;
+    padding: 20px 15px;
+    color: #e0c097;
+    display: flex;
+    align-items: center;
+}
+.about{
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr;
+    gap: 10px;
+    height: 90%;
+}
+.abt{
+    height: 284px;
+}
+.about h3,h4{
+    color: goldenrod;
+}
+
+.about .left img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 3px rgb(224, 217, 217);
+}
+.about .right{
+    padding: 7px;
+}
+
+#contact{
+    color: white;
+    height: fit-content;
+    padding: 20px;
+    /* margin: 10px; */
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    border: 2px solid rgb(245, 252, 245);
+    height:350px;
+    width: 560px;
+    padding: 20px 15px;
+}
+
+.form:hover{
+    border: 2px solid  #e0c097;;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 6px;
+}
+
+form input[type="text"]{
+    width: 82%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    outline: none;
+    color: white;
+}
+
+input[type="email"]{
+    width: 89%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    outline: none;
+    color: white;
+}
+
+form textarea{
+    width: 100%;
+    height: 5rem;
+    outline: none;
+    /* color:#e0c097;; */
+}
+
+form button{
+    width: 20%;
+    padding: 4px;
+    color: #b71c1c;
+    border: 2px solid  #b71c1c;
+    background-color:#e0c097;
+    border-radius: 7px;
+    cursor: pointer;
+}
+form button:hover{
+    color: #e0c097;
+    border: 2px solid #e0c097;
+    background-color: #b71c1c;
+}
+.wrapper{
+    display: flex;
+    gap: 30px;
+}
+
+.cnt-info{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cnt-info li{
+    list-style-type: none;
+    padding: 5px;
+
+}
+
+/* responsiveness for mobile screen */
+@media (max-width: 408px) {
+   
+    nav ul{
+        display: none;
+    }
+    nav i{
+        visibility: visible;
+        font-size: 1.2rem;
+    }
+
+    #menu{
+        /* height: 25rem; */
+        /* border: 2px solid salmon; */
+        height: fit-content;
+        padding: 5px 20px;
+        background-color: #1b1b1b; 
+    }
+    #menu i{
+        display: none;
+    }
+    .menu{
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        gap: .5rem;
+        height: fit-content;
+        /* height: 90%; */
+        color: white;
+        padding: 10px;
+        
+    }
+    .mitems{
+        box-shadow: 0px 0px 3px rgb(224, 217, 217);
+        height: 20rem;
+        border-radius: 10px;
+        display: grid;
+        gap: 1px;
+        position: relative;
+        grid-template: 60% 40%/ 1fr;
+    }
+    #about{
+        height: fit-content;
+        margin-bottom: 50px;
+    }
+    .abt{
+        height: 284px;
+    }
+    .about{
+        display: grid;
+        grid-template: 270px 1fr/ 1fr;
+        height: fit-content;
+        gap: 20px;
+    }
+    .wrapper{
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+    }
+    .form{
+        border: 2px solid rgb(245, 244, 248);
+        height:350px;
+        width: 90%;
+        margin-left: 10px;
+        padding: 20px 5px;
+        display: flex;
+    }
+    form input[type="text"]{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid goldenrod;
+        outline: none;
+        color: white;
+    }
+    input[type="email"]{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid goldenrod;
+        outline: none;
+        color: white;
+    }
+    
+    form button{
+        width: 5rem;
+
+    }
+}
